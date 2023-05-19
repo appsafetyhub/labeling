@@ -1,4 +1,4 @@
-import { Lang } from '@pdfme/common';
+import { Lang } from '@appsafetyhub/common';
 
 type DictEn = typeof dictEn;
 

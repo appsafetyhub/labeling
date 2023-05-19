@@ -1,5 +1,5 @@
+import { Size } from '@appsafetyhub/common';
 import React, { useContext } from 'react';
-import { Size } from '@pdfme/common';
 import { I18nContext } from '../contexts';
 
 const Error = ({ size, error }: { size: Size; error: Error }) => {

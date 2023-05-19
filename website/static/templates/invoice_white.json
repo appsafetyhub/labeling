@@ -288,7 +288,7 @@
       "No": "123456789",
       "Date": "02/02/2020",
       "InvoiceToName": "pdfme studio",
-      "InvoiceToInfo": "+123-456-7890\nhello@pdfme.com",
+      "InvoiceToInfo": "+123-456-7890\nhello@appsafetyhub.com",
       "PaymentMethod": "Salford&Co.\nAccount No: 123-456-7890",
       "Description1": "Your Service Description",
       "Qty1": "1",
@@ -318,7 +318,7 @@
       "Qty7": "1",
       "Price7": "$100",
       "Total7": "$100",
-      "InvoiceFromInfo": "+123-456-7890\nhello@pdfme.com\n123 Anywhere St., Any City, ST 12345",
+      "InvoiceFromInfo": "+123-456-7890\nhello@appsafetyhub.com\n123 Anywhere St., Any City, ST 12345",
       "Total": "$700"
     }
   ],

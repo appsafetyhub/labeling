@@ -1,5 +1,5 @@
+import { BarcodeSchema, BarCodeType, validateBarcodeInput } from '@appsafetyhub/common';
 import React, { forwardRef, Ref } from 'react';
-import { validateBarcodeInput, BarCodeType, BarcodeSchema } from '@pdfme/common';
 import { ZOOM } from '../../constants';
 import { SchemaUIProps } from './SchemaUI';
 

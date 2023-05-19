@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { createPortal } from 'react-dom';
+import { SchemaForUI } from '@appsafetyhub/common';
 import {
-  closestCorners,
-  DndContext,
-  DragOverlay,
-  KeyboardSensor,
-  PointerSensor,
-  useSensors,
-  useSensor,
+    DndContext,
+    DragOverlay,
+    KeyboardSensor,
+    PointerSensor,
+    closestCorners,
+    useSensor,
+    useSensors,
 } from '@dnd-kit/core';
 import {
-  SortableContext,
-  arrayMove,
-  sortableKeyboardCoordinates,
-  verticalListSortingStrategy,
+    SortableContext,
+    arrayMove,
+    sortableKeyboardCoordinates,
+    verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { SchemaForUI } from '@pdfme/common';
+import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
+import { SidebarProps } from '../index';
 import Item from './Item';
 import SelectableSortableItem from './SelectableSortableItem';
-import { SidebarProps } from '../index';
 
 const SelectableSortableContainer = (
   props: Pick<

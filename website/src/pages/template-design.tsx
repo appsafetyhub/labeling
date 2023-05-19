@@ -1,27 +1,27 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { Template, generate } from '@appsafetyhub/generator';
+import { Designer } from '@appsafetyhub/ui';
 import {
-  ChangeCircleOutlined,
-  UploadFileOutlined,
-  FileDownloadOutlined,
-  CodeOutlined,
-  PreviewOutlined,
+    ChangeCircleOutlined,
+    CodeOutlined,
+    FileDownloadOutlined,
+    PreviewOutlined,
+    UploadFileOutlined,
 } from '@mui/icons-material';
-import { generate, Template } from '@pdfme/generator';
-import { Designer } from '@pdfme/ui';
 import Layout from '@theme/Layout';
-import {
-  getSampleTemplate,
-  cloneDeep,
-  downloadJsonFile,
-  readFile,
-  getTemplateFromJsonFile,
-  getGeneratorSampleCode,
-  getDesignerSampleCode,
-  getFormSampleCode,
-  getViewerSampleCode,
-} from '../libs/helper';
-import HowToUseDesignerButton from '../components/HowToUseDesignerButton';
+import { useEffect, useRef, useState } from 'react';
 import DesignerCodeModal from '../components/DesignerCodeModal';
+import HowToUseDesignerButton from '../components/HowToUseDesignerButton';
+import {
+    cloneDeep,
+    downloadJsonFile,
+    getDesignerSampleCode,
+    getFormSampleCode,
+    getGeneratorSampleCode,
+    getSampleTemplate,
+    getTemplateFromJsonFile,
+    getViewerSampleCode,
+    readFile,
+} from '../libs/helper';
 
 const headerHeight = 60;
 const controllerHeight = 60;

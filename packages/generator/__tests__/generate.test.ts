@@ -1,8 +1,8 @@
-import { writeFileSync, readFileSync, readdir, unlink } from 'fs';
+import { BLANK_PDF, Font, Template } from '@appsafetyhub/common';
+import { readFileSync, readdir, unlink, writeFileSync } from 'fs';
 import * as path from 'path';
 import generate from '../src/generate';
 import templateData from './assets/templates';
-import { Template, Font, BLANK_PDF } from '@pdfme/common';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const PDFParser = require('pdf2json');
 

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { SchemaForUI } from '@pdfme/common';
-import { readFiles } from '../../../../helper';
-import { I18nContext } from '../../../../contexts';
-import { SidebarProps } from '..';
+import { SchemaForUI } from '@appsafetyhub/common';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import React, { useContext } from 'react';
+import { SidebarProps } from '..';
+import { I18nContext } from '../../../../contexts';
+import { readFiles } from '../../../../helper';
 
 const ExampleInputEditor = (
   props: Pick<SidebarProps, 'changeSchemas'> & { activeSchema: SchemaForUI }

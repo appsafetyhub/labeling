@@ -1,11 +1,11 @@
-import React from 'react';
+import { Size } from '@appsafetyhub/common';
 import {
-  ChevronLeftIcon,
-  ChevronDoubleLeftIcon,
-  ChevronRightIcon,
-  ChevronDoubleRightIcon,
+    ChevronDoubleLeftIcon,
+    ChevronDoubleRightIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
 } from '@heroicons/react/24/outline';
-import { Size } from '@pdfme/common';
+import React from 'react';
 
 const buttonHeight = 38;
 const buttonWrapStyle: React.CSSProperties = {

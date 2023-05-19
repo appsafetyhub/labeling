@@ -1,9 +1,9 @@
-import React, { forwardRef, RefObject, Ref, ReactNode } from 'react';
-import { SchemaForUI, isTextSchema, isImageSchema, isBarcodeSchema } from '@pdfme/common';
-import { ZOOM, SELECTABLE_CLASSNAME } from '../../constants';
-import TextSchema from './TextSchema';
-import ImageSchema from './ImageSchema';
+import { SchemaForUI, isBarcodeSchema, isImageSchema, isTextSchema } from '@appsafetyhub/common';
+import React, { ReactNode, Ref, RefObject, forwardRef } from 'react';
+import { SELECTABLE_CLASSNAME, ZOOM } from '../../constants';
 import BarcodeSchema from './BarcodeSchema';
+import ImageSchema from './ImageSchema';
+import TextSchema from './TextSchema';
 
 export interface SchemaUIProps {
   schema: SchemaForUI;

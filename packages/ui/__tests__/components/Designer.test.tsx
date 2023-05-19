@@ -1,15 +1,15 @@
 /**
  * @jest-environment jsdom
  */
-import React from 'react';
-import { render, act, waitFor } from '@testing-library/react';
+import { getDefaultFont } from '@appsafetyhub/common';
 import '@testing-library/jest-dom';
+import { act, render, waitFor } from '@testing-library/react';
+import React from 'react';
 import Designer from '../../src/components/Designer/index';
-import { I18nContext, FontContext } from '../../src/contexts';
-import { curriedI18n } from '../../src/i18n';
 import { SELECTABLE_CLASSNAME } from '../../src/constants';
-import { getDefaultFont } from '@pdfme/common';
-import { setupUIMock, getSampleTemplate } from '../assets/helper';
+import { FontContext, I18nContext } from '../../src/contexts';
+import { curriedI18n } from '../../src/i18n';
+import { getSampleTemplate, setupUIMock } from '../assets/helper';
 
 test('Designer snapshot', async () => {
   setupUIMock();

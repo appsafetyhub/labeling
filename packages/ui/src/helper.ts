@@ -2,23 +2,23 @@
 // 昔のpdfmeのソースからwebpackのビルドに戻す
 // 多分tree-shakingは動かないかもしれないけど、とりあえず動くようにするべき
 // @ts-ignore
+import {
+    b64toUint8Array,
+    DEFAULT_ALIGNMENT,
+    DEFAULT_CHARACTER_SPACING,
+    DEFAULT_FONT_SIZE,
+    DEFAULT_LINE_HEIGHT,
+    getB64BasePdf,
+    Schema,
+    SchemaForUI,
+    Size,
+    Template,
+} from '@appsafetyhub/common';
+import hotkeys from 'hotkeys-js';
 import PDFJSWorker from 'pdfjs-dist/build/pdf.worker.entry.js';
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/legacy/build/pdf.js';
+import { RULER_HEIGHT, ZOOM } from './constants';
 GlobalWorkerOptions.workerSrc = PDFJSWorker;
-import hotkeys from 'hotkeys-js';
-import {
-  getB64BasePdf,
-  b64toUint8Array,
-  Template,
-  SchemaForUI,
-  Schema,
-  Size,
-  DEFAULT_ALIGNMENT,
-  DEFAULT_FONT_SIZE,
-  DEFAULT_CHARACTER_SPACING,
-  DEFAULT_LINE_HEIGHT,
-} from '@pdfme/common';
-import { ZOOM, RULER_HEIGHT } from './constants';
 
 export const uuid = () =>
   'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {

@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
 import {
-  SchemaForUI,
-  getFallbackFontName,
-  DEFAULT_FONT_SIZE,
-  DEFAULT_LINE_HEIGHT,
-  DEFAULT_CHARACTER_SPACING,
-  DEFAULT_FONT_COLOR,
-} from '@pdfme/common';
-import { FontContext } from '../../../../contexts';
-import { SidebarProps } from '..';
+    DEFAULT_CHARACTER_SPACING,
+    DEFAULT_FONT_COLOR,
+    DEFAULT_FONT_SIZE,
+    DEFAULT_LINE_HEIGHT,
+    SchemaForUI,
+    getFallbackFontName,
+} from '@appsafetyhub/common';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import React, { useContext } from 'react';
+import { SidebarProps } from '..';
+import { FontContext } from '../../../../contexts';
 
 const inputStyle = {
   width: '90%',

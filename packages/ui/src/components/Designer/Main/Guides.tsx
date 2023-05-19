@@ -1,7 +1,7 @@
-import React, { Ref } from 'react';
+import { Size } from '@appsafetyhub/common';
 import Guides from '@scena/react-guides';
-import { Size } from '@pdfme/common';
-import { ZOOM, RULER_HEIGHT } from '../../../constants';
+import React, { Ref } from 'react';
+import { RULER_HEIGHT, ZOOM } from '../../../constants';
 
 const _Guides = ({
   paperSize,
