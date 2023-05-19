@@ -1,28 +1,28 @@
-import React, { useRef, useState, useEffect, useContext, useCallback } from 'react';
-import { DesignerReactProps, Template, SchemaForUI } from '@pdfme/common';
-import Sidebar from './Sidebar/index';
-import Main from './Main/index';
-import { ZOOM, RULER_HEIGHT } from '../../constants';
+import { DesignerReactProps, SchemaForUI, Template } from '@appsafetyhub/common';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { RULER_HEIGHT, ZOOM } from '../../constants';
 import { I18nContext } from '../../contexts';
 import {
-  uuid,
-  set,
-  cloneDeep,
-  initShortCuts,
-  destroyShortCuts,
-  templateSchemas2SchemasList,
-  fmtTemplate,
-  getInitialSchema,
-  getSampleByType,
-  getKeepRatioHeightByWidth,
-  getUniqSchemaKey,
-  moveCommandToChangeSchemasArg,
-  getPagesScrollTopByIndex,
+    cloneDeep,
+    destroyShortCuts,
+    fmtTemplate,
+    getInitialSchema,
+    getKeepRatioHeightByWidth,
+    getPagesScrollTopByIndex,
+    getSampleByType,
+    getUniqSchemaKey,
+    initShortCuts,
+    moveCommandToChangeSchemasArg,
+    set,
+    templateSchemas2SchemasList,
+    uuid,
 } from '../../helper';
-import { useUIPreProcessor, useScrollPageCursor } from '../../hooks';
-import Root from '../Root';
-import Error from '../Error';
+import { useScrollPageCursor, useUIPreProcessor } from '../../hooks';
 import CtlBar from '../CtlBar/index';
+import Error from '../Error';
+import Root from '../Root';
+import Main from './Main/index';
+import Sidebar from './Sidebar/index';
 
 const TemplateEditor = ({
   template,

@@ -1,7 +1,7 @@
-import { RefObject, useRef, useState, useCallback, useEffect } from 'react';
-import { Template, Size, getB64BasePdf } from '@pdfme/common';
-import { pdf2Pngs, getPdfPageSizes, b64toBlob } from './helper';
-import { ZOOM, RULER_HEIGHT } from './constants';
+import { Size, Template, getB64BasePdf } from '@appsafetyhub/common';
+import { RefObject, useCallback, useEffect, useRef, useState } from 'react';
+import { RULER_HEIGHT, ZOOM } from './constants';
+import { b64toBlob, getPdfPageSizes, pdf2Pngs } from './helper';
 
 export const usePrevious = <T>(value: T) => {
   const ref = useRef<T | null>(null);

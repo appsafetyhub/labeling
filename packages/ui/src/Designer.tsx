@@ -1,10 +1,10 @@
+import { DesignerProps, Template, checkDesignerProps, checkTemplate } from '@appsafetyhub/common';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Template, DesignerProps, checkDesignerProps, checkTemplate } from '@pdfme/common';
 import { BaseUIClass } from './class';
-import { DESTROYED_ERR_MSG } from './constants';
-import { I18nContext, FontContext } from './contexts';
 import DesignerComponent from './components/Designer/index';
+import { DESTROYED_ERR_MSG } from './constants';
+import { FontContext, I18nContext } from './contexts';
 import { cloneDeep } from './helper';
 
 class Designer extends BaseUIClass {

@@ -1,5 +1,5 @@
-import { SchemaForUI, Schema } from '@pdfme/common';
-import { uuid, getUniqSchemaKey } from '../src/helper';
+import { Schema, SchemaForUI } from '@appsafetyhub/common';
+import { getUniqSchemaKey, uuid } from '../src/helper';
 
 describe('getUniqSchemaKey test', () => {
   const getSchema = (): Schema => ({

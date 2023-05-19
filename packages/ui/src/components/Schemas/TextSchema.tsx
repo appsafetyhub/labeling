@@ -1,14 +1,14 @@
-import React, { forwardRef, Ref } from 'react';
 import {
-  DEFAULT_FONT_SIZE,
-  DEFAULT_ALIGNMENT,
-  DEFAULT_LINE_HEIGHT,
-  DEFAULT_CHARACTER_SPACING,
-  DEFAULT_FONT_COLOR,
-  TextSchema,
-} from '@pdfme/common';
-import { SchemaUIProps } from './SchemaUI';
+    DEFAULT_ALIGNMENT,
+    DEFAULT_CHARACTER_SPACING,
+    DEFAULT_FONT_COLOR,
+    DEFAULT_FONT_SIZE,
+    DEFAULT_LINE_HEIGHT,
+    TextSchema,
+} from '@appsafetyhub/common';
+import React, { forwardRef, Ref } from 'react';
 import { ZOOM } from '../../constants';
+import { SchemaUIProps } from './SchemaUI';
 
 type Props = SchemaUIProps & { schema: TextSchema };
 

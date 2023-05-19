@@ -1,4 +1,4 @@
-import { Template, BLANK_PDF } from '@pdfme/common';
+import { BLANK_PDF, Template } from '@appsafetyhub/common';
 
 /* eslint global-require: off*/
 /* eslint @typescript-eslint/no-var-requires: off*/

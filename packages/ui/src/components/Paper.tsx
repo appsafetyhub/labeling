@@ -1,7 +1,7 @@
+import { SchemaForUI, Size, getFallbackFontName } from '@appsafetyhub/common';
 import React, { MutableRefObject, ReactNode, useContext } from 'react';
-import { SchemaForUI, Size, getFallbackFontName } from '@pdfme/common';
+import { RULER_HEIGHT, ZOOM } from '../constants';
 import { FontContext } from '../contexts';
-import { ZOOM, RULER_HEIGHT } from '../constants';
 
 const Paper = (porps: {
   paperRefs: MutableRefObject<HTMLDivElement[]>;
@@ -35,7 +35,7 @@ const Paper = (porps: {
 
         return (
           <div
-            id={`@pdfme/ui-paper${paperIndex}`}
+            id={`@appsafetyhub/ui-paper${paperIndex}`}
             key={paperIndex + JSON.stringify(paperSize)}
             ref={(e) => {
               if (e) {

@@ -1,5 +1,5 @@
+import { SchemaForUI } from '@appsafetyhub/common';
 import React, { CSSProperties } from 'react';
-import { SchemaForUI } from '@pdfme/common';
 import { round } from '../../../../helper';
 import { SidebarProps } from '../index';
 

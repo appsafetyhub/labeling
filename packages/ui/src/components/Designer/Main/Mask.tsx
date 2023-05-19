@@ -1,5 +1,5 @@
+import { Size } from '@appsafetyhub/common';
 import React from 'react';
-import { Size } from '@pdfme/common';
 import { RULER_HEIGHT } from '../../../constants';
 
 const Mask = ({ width, height }: Size) => (

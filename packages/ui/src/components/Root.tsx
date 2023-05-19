@@ -1,5 +1,5 @@
-import React, { useContext, forwardRef, ReactNode, Ref, useEffect } from 'react';
-import { Size } from '@pdfme/common';
+import { Size } from '@appsafetyhub/common';
+import React, { ReactNode, Ref, forwardRef, useContext, useEffect } from 'react';
 import { FontContext } from '../contexts';
 import Spinner from './Spinner';
 

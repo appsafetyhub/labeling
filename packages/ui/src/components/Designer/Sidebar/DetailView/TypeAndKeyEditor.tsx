@@ -1,7 +1,7 @@
-import React, { useContext, useRef, useCallback } from 'react';
-import { schemaTypes, SchemaForUI } from '@pdfme/common';
-import { SidebarProps } from '../index';
+import { SchemaForUI, schemaTypes } from '@appsafetyhub/common';
+import React, { useCallback, useContext, useRef } from 'react';
 import { I18nContext } from '../../../../contexts';
+import { SidebarProps } from '../index';
 
 const ErrorLabel = ({ isError, msg }: { isError: boolean; msg: string }) => (
   <span
