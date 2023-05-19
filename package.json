@@ -1,5 +1,5 @@
 {
-  "name": "@pdfme",
+  "name": "@safetyhub",
   "version": "0.0.0",
   "private": true,
   "author": "hand-dot",
@@ -16,7 +16,7 @@
   "homepage": "https://pdfme.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pdfme/pdfme.git"
+    "url": "git@github.com:appsafetyhub/labeling.git"
   },
   "bugs": {
     "url": "https://github.com/pdfme/pdfme/issues"

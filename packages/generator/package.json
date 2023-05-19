@@ -1,6 +1,6 @@
 {
-  "name": "@pdfme/generator",
-  "version": "1.1.9",
+  "name": "@safetyhub/generator",
+  "version": "1.1.11",
   "sideEffects": false,
   "author": "hand-dot",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "homepage": "https://pdfme.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pdfme/pdfme.git"
+    "url": "git@github.com:appsafetyhub/labeling.git"
   },
   "bugs": {
     "url": "https://github.com/pdfme/pdfme/issues"
